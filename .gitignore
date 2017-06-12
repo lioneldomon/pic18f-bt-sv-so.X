@@ -1,5 +1,17 @@
-# Object file
-*.o
-
-# Ada Library Information
-*.ali
+*.workspace
+*.pdsbak
+*.obj
+*.DO
+*.EDF
+*.log
+*.sts
+*.rte
+funclist
+build/
+dist/
+nbproject/private/
+nbproject/*.mk
+nbproject/*.bash
+nbproject/*.properties
+*.DS_Store
+Thumbs.db
