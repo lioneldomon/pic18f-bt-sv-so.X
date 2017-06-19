@@ -6,6 +6,8 @@
 #include <pic18f25k22.h>
 #include "file.h"
 #include "uart.h"
+#include "i2c.h"
+#include "maitre.h"
 
 /**
  * Bits de configuration:
@@ -73,11 +75,14 @@ void initialiseHardware() {
  * Point d'entrée du programme.
  */
 void main(void) {
+    char buffer[50];
     initialiseHardware();
     uartReinitialise();
+    maitreMain();
     // Affiche les caractères de la file.
     while(1) {
-
+//        gets(buffer);
+//        printf("Vous avez dit: %s",buffer);
     }
 }
 #endif

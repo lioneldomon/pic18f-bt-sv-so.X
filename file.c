@@ -87,15 +87,3 @@ void fileReinitialise(File *file) {
     file->filePleine = 0; //On remet les pointeurs à 0: résultat la file est vide
     file->fileVide = 255; //On remet les pointeurs à 255
 }
-
-/* Copie le contenu d'une file dans l'autre
- * File1 : source
- * File2 : destination
-*/
-void copieFile(File *file1, File *file2){
-    char c = 0;
-    while(c<FILE_TAILLE){
-        file2->file[c]=file1->file[c];
-        c++;
-    }
-}

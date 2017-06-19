@@ -103,16 +103,14 @@ void uartReception() {
     fileEnfile(&fileReception, RCREG1);     // Sauve la valeur recu dans la file de réception
     
     // Es que le dernier caractères est le CR?
-    if(RCREG == 0x0D){ // Détection du CR
-        printf("Vous avez dit :  \r\n");
-        while(fileEstVide(&fileReception)==0){
-            printf("%c",fileDefile(&fileReception));            
-        }
-        printf("\r\n");
-
+//    if(RCREG == 0x0D){ // Détection du CR
+//        printf("Vous avez dit :  \r\n");
+//        while(fileEstVide(&fileReception)==0){
+//            printf("%c",fileDefile(&fileReception));            
 //        }
-        fileReinitialise(&fileReception);           // Init file de reception
-    }
+//        printf("\r\n");
+//        fileReinitialise(&fileReception);           // Init file de reception
+//    }
 
 }
 

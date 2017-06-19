@@ -26,7 +26,6 @@ char fileDefile(File *);
 char fileEstVide(File *);
 char fileEstPleine(File *);
 void fileReinitialise(File *);
-void copieFile(File *, File *);
 
 #ifdef TEST
 int testFile();
