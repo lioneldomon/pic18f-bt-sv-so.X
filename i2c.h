@@ -6,7 +6,7 @@
 #define I2C_MASQUE_ADRESSES_ESCLAVES 0b11111000
 
 typedef enum {     
-    SONAR_LEC = 0b00100111,         // Adresse du sonar pour lecture
+    SONAR_LEC = 0b00011001,         // Adresse du sonar pour lecture
     LECTURE_POTENTIOMETRE  = 0b00011001,
     ECRITURE_SERVO_0 = 0b01100100,
 
