@@ -5,10 +5,11 @@
 #define I2C_MASQUE_ADRESSES_LOCALES 0b11
 #define I2C_MASQUE_ADRESSES_ESCLAVES 0b11111000
 
-typedef enum {
+typedef enum {     
+    SONAR_LEC = 0b00100111,         // Adresse du sonar pour lecture
     LECTURE_POTENTIOMETRE  = 0b00011001,
-    ECRITURE_SERVO_0 = 0b00011000,
-    ECRITURE_SERVO_1 = 0b00011010
+    ECRITURE_SERVO_0 = 0b01100100,
+
 } I2cAdresse;
 
 typedef struct {

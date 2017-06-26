@@ -15,7 +15,7 @@ void maitreInterruptions() {
     
     if (INTCON3bits.INT2F) {
         INTCON3bits.INT2F = 0;
-        i2cAdresse = ECRITURE_SERVO_1;
+//        i2cAdresse = ECRITURE_SERVO_1;
         ADCON0bits.GO = 1;
     }
     
@@ -26,7 +26,7 @@ void maitreInterruptions() {
     
     if (PIR1bits.TMR1IF) {
         TMR1 = 3035;
-        i2cPrepareCommandePourEmission(LECTURE_POTENTIOMETRE, 0);
+//        i2cPrepareCommandePourEmission(LECTURE_POTENTIOMETRE, 0);
         PIR1bits.TMR1IF = 0;
     }
 
